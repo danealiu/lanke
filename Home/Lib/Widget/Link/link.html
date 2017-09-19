@@ -1,0 +1,16 @@
+<if condition="$links">
+                    <div class="btn-group dropup" style="margin-bottom:15px;">
+                      <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown" aria-expanded="false" style="line-height:13px;">---友情链接---</button>
+                      <button type="button" class="btn btn-default dropdown-toggle btn-sm"  style="line-height:13px;">
+                        <span class="caret"></span>
+                        <span class="sr-only">友情链接</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                      	<volist name='links' id='vo'>
+                        <li><a target="_blank" href="<{$vo.url}>"><{$vo.name}></a></li>
+		</volist>
+                      </ul>
+                    </div> 
+</if>
+
+

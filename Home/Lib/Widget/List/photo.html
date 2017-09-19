@@ -1,0 +1,13 @@
+<if condition="$photo">
+    <volist name='photo' id='vo' offset="0" length="3">
+    <div class="col-sm-6 col-md-4 col-mm-4 cases_pic_bg">
+        <div class="thumbnail cases_pic">
+          <a href="<{:W('Href',array('url'=>$vo['url'],'id'=>$vo['id'],'type'=>'Photo'))}>"><img src="__ROOT__/Uploads/<{$vo.thumb}>" class="img-thumbnail" alt="<{$vo.name}>"/></a>
+          <h3><a href="<{:W('Href',array('url'=>$vo['url'],'id'=>$vo['id'],'type'=>'Photo'))}>"><{$vo.name|mb_substr=###,0,12,'utf-8'}></a></h3>
+        </div>
+    </div>
+    </volist>
+</if>
+
+
+

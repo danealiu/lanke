@@ -1,0 +1,8 @@
+<if condition="$tags">
+	<div class="tags">
+	<a class="btn btn-default btn-xs" href="<{:U('Tags/index')}>" role="button">全部标签</a>
+	      <volist name="tags" id="vo">
+	        <a class="btn btn-default btn-xs" href="<{:W('Taghref',array('id'=>$vo['id'],'type'=>$vo['type']))}>" role="button"  target="_blank"><{$vo.name}></a> 
+	      </volist>
+	</div>
+</if>

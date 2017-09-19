@@ -1,0 +1,3 @@
+<?php
+//000000086400a:1:{s:5:"flash";a:2:{i:0;a:7:{s:2:"id";s:1:"1";s:5:"title";s:9:"广告一";s:4:"type";s:1:"1";s:4:"sort";s:1:"1";s:4:"link";s:24:"http://www.lankecms.com/";s:5:"photo";s:17:"53007d7931975.jpg";s:11:"description";s:21:"第一个幻灯广告";}i:1;a:7:{s:2:"id";s:1:"2";s:5:"title";s:9:"广告二";s:4:"type";s:1:"1";s:4:"sort";s:1:"2";s:4:"link";s:27:"http://lankecms.taobao.com/";s:5:"photo";s:17:"5300811240d99.jpg";s:11:"description";s:0:"";}}}
+?>

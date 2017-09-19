@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><{$Think.config.seo_title}></title>
+    <meta name="keywords" content="<{$Think.config.seo_keywords}>" />
+    <meta name="description" content="<{$Think.config.seo_description}>" />
+    <include file='Public:file'/>
+  </head>
+  <body>
+
+ <include file='Public:head'/>
+
+ <{:W('Flash')}>
+    <script type="text/javascript">
+        $('.bxslider').bxSlider({
+          adaptiveHeight: true,
+          infiniteLoop: true,
+          hideControlOnEnd: true,
+          auto:true
+        });
+    </script>
+
+<!-- main -->
+
+
+    <div class="container">    
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="about_box">
+                    <h2 class="about_h2">公司简介</h2><span class="about_span">ABOUT US</span>
+                    <section>
+                        <img align="left" src="../Public/images/about.png" alt="公司简介">
+                        <{:W('About',array('id'=>25,'len'=>380))}>
+                        <a href="<{:W('Listhref',array('id'=>25))}>" class="about_more">查看详细 &gt;&gt;</a>
+                    <section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">    
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="index_product">
+                    <h2 class="about_h2">产品展示</h2><span class="about_span">PRODUCT DISPLAY</span>
+                        <div class="product_list">
+                        <{:W('List',array('table'=>'Product','bid'=>1,'id'=>1))}>
+                        </div>
+                </div>
+
+                    <div class="left_nav index_left_nav" id="categories">
+                        <h2 class="left_h2">导航栏目</h2>
+                         <{:W('Left',array('id'=>1,'type'=>'product'))}>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">    
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-8 col-md-7">
+                <div class="news_box">
+                    <h2 class="about_h2">新闻中心</h2><span class="about_span">NEWS CENTER</span>
+                    <{:W('List',array('table'=>'New','bid'=>2,'id'=>2))}>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-5">    
+                <include file='Public:contact'/>
+                <{:W('Link')}>
+                <{:W('Tags')}>
+            </div>
+
+        </div>
+    </div>
+
+    <include file='Public:foot'/>
+
+  </body>
+</html>

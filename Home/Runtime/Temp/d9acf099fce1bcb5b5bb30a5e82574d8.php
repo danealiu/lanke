@@ -1,0 +1,3 @@
+<?php
+//000000086400a:4:{s:2:"id";s:1:"2";s:4:"type";s:3:"new";s:8:"bigclass";a:3:{i:0;a:6:{s:2:"id";s:2:"12";s:4:"name";s:12:"公司新闻";s:3:"url";s:11:"Company-new";s:3:"pid";s:1:"2";s:4:"sort";s:1:"1";s:4:"link";s:0:"";}i:1;a:6:{s:2:"id";s:2:"13";s:4:"name";s:12:"行业新闻";s:3:"url";s:13:"Industry-news";s:3:"pid";s:1:"2";s:4:"sort";s:1:"2";s:4:"link";s:0:"";}i:2;a:6:{s:2:"id";s:2:"39";s:4:"name";s:12:"科技创新";s:3:"url";s:10:"technology";s:3:"pid";s:1:"2";s:4:"sort";s:1:"3";s:4:"link";s:0:"";}}s:10:"smallclass";a:1:{i:0;a:6:{s:2:"id";s:2:"40";s:4:"name";s:12:"部门新闻";s:3:"url";s:24:"Department-of-journalism";s:3:"pid";s:2:"12";s:4:"sort";s:1:"1";s:4:"link";s:0:"";}}}
+?>
